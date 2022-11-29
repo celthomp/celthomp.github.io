@@ -5,67 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-    
-    <title>All Things Christmas</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Dish It Out</title>
 </head>
-<body>
 
+<body>
     <nav>
         <ul>
             <li class="menu-icon"><a href="#"><i class="fa fa-bars"></i></a></li>
-            <li><a href="#">Recipes</a></li>
-            <li><a href="#">Decorations</a></li>
-            <li><a href="#">Activities</a></li>
-            <li><a href="#gallery">Trees</a></li>
-            <li><a href="#">Gift Ideas</a></li>
-            <li><a href="#">Lodging</a></li>
-            <li><a href="#">Wreath Classes</a></li>
-            
+            <a href="index.html">
+                <img src="/img/Logo.png" class="logo">
+            </a>
+            <li><a href="about.html" class="navlinks">About Us</a></li>
+            <li><a href="#" class="navlinks">Products</a></li>
+            <li><a href="#" class="navlinks">Store Locations</a></li>
         </ul>
-    </nav>
-    
+    </nav>  
     <div class="hero">
-        <h1>Your Christmas Hub</h1>
-        <h2>A place you can go to find all your Christmas needs!</h2>
-    </div>
-    <div id="descrip">
-        <p class="welcome"> Welcome! </p>
-        <p>
-            We love Christmas and want to provide you with many ways to make yours as special as possible! 
-            Here you can see some yummy recipes you can make over the holidays, 
-            where to buy some beautiful and affordable decor for a cozy home, 
-            some fun indoor activities to do with the family, some tree decoration inspo, 
-            gift ideas, lodging for a fantastic winter getaway, party games to play at gatherings, 
-            outdoor activities to play with your loved ones and finally, 
-            some classes that are being offered on wreath decorating, baking, etc!
-        </p> 
-    </div>
-    
-    <div class="wrapper">
-        <div id="gallery">
-            <img src="images/casey-chae-cookies-unsplash.jpeg" alt="cookies">
-            <img src="images/stories-candles-unsplash.jpeg" alt="candles">
-            <img src="images/jonathan-borba-family-unsplash.jpeg" alt="family decorating tree">
-            <img src="images/alsu-vershinina-colourtheme-unsplash.jpeg" alt="christmas tree">
-            <img src="images/kira-auf-der-heide-gifts-unsplash.jpeg" alt="gift">
-            <img src="images/martin-katler-lodging-unsplash.jpeg" alt="cabin">
-            <img src="images/kelsey-chance-partygames-unsplash.jpeg" alt="women in circle at party">
-            <img src="images/jonathan-knepper--lWKt2RKz50-unsplash.jpeg" alt="outdoor snow on tree">
-            <img src="images/annie-spratt-QUHiX6x_yDE-unsplash.jpeg" alt="wreath on door">
+        <div class="welcome">
+            <h1 id="welcometitle">Hey, You!</h1>
+            <p> Welcome to our Dish It Out official site! Feel free to take a look around to see how our products
+                are perfect for your home. Down below you can see some of our bestsellers, and if you want
+                to see our whole collection, just tap that "products" button in the navigation! We now have a new
+                location in Toronto, too. So if you're feeling like you want to see some items in person, feel free to 
+                pop on over!
+            </p>
+        </div>
+    </div> 
+    <div class="bestheader">
+        <h1 id="besttitle">
+            SOME OF OUR BESTSELLERS
+        </h1>
+    </div> 
+    <div class="grid">
+        <div id="pic-one">
+            <div class="details">
+                <h3>Intricate Floral Plates</h3>
+                <p>These gorgeous plates were made by Katherine Yale.</p>
+                <a href="productdesc.html">Learn More</a>
+            </div>
+        </div>
+        <div id="pic-two">
+            <div class="details">
+                <h3>Hand Sculpted Leafy Serving Bowls</h3>
+                <p>These gorgeous plates were made by Yvonne Fern.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div id="pic-three">
+            <div class="details">
+                <h3>Classic and Timeless Plates</h3>
+                <p>These gorgeous plates were made by Boris Jans.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div id="pic-four">
+            <div class="details">
+                <h3>Lively Fun Handmade Bowls</h3>
+                <p>These gorgeous bowls were made by Surya Browne.</p>
+                <a href="#">Learn More</a>
+            </div>
         </div>
     </div>
-        
+
     <footer>
-        <a href="#descrip" class="links">About Us</a>
-        <a href="#" class="links">Back to Top</a>
-        <a href="#" class="links">Bonus Content</a>
+        <div class="footerlinks">
+            <a href="about.html">About Us</a>
+        </div> 
+        <div class="footerlinks">
+            <a href="#">Products</a>
+        </div>
+        <div class="footerlinks">
+            <a href="#">Store Locations</a>
+        </div>
+
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 
 </body>
-
-
 </html>

@@ -1,143 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
+
 html {
-    background-image: linear-gradient(white, lightgrey, #001e00);
-    margin: 0px;
-}
-
-
-nav {
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-
+    background-color: #ffffff;
+    margin: 0;
 }
 
 nav ul {
-    list-style-type: none;
-    font-family: Helvetica;
     display: flex;
-    flex-wrap: wrap;
-    /* justify-content: right; */
+    height: 100px;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
 }
 
-nav a {
+.logo {
+    height: 90px;
+    margin-left: 30px;
+}
+
+.navlinks {
+    margin-left: 60px;
     text-decoration: none;
-    margin: 10px;
-    color: black;
-    padding:5px;
-    border-radius: 50px;
+    background-color: #23395d;
+    padding: 15px;
+    border-radius: 25px;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: medium;
+    font-size: medium;
+
 }
 
-nav a:hover {
-    background-color: darkred;
-    color: white;
+nav li a:hover {
+    background-color: white;
+    color: #23395d;
 }
 
 .menu-icon {
-  display: none;
-  margin-bottom: 5px;
+    display: none;
 }
 
 
 .hero {
-    background-image: url(../images/annie-spratt-unsplash.jpeg);
-    object-fit: cover;
-    background-repeat: no-repeat;
-    min-height: 600px;
+    background-image: url(/img/jannet-serhan-fancy\ dishes.jpeg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .hero h1, h2 {
-    color: white;
-    font-family: helvetica;
-  }
-  
-  .hero h1 {
-    font-size: xxx-large; 
-  }
-  
-  
-  #descrip {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: #005a00;
-    font-family: helvetica;
-    font-size: x-large;
-    padding: 0px 50px;
-    margin: 20px;
-  }
+}
 
-  .welcome {
+.welcome {
+    background-color: #e0efff;
+    width: 300px;
+    height: 350px;
+    margin-top: 200px;
+    margin-left: 900px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    filter: drop-shadow(10px 10px 35px);
+    
+}
+
+#welcometitle {
+    font-family: 'Cedarville Cursive', cursive;
     font-weight: bold;
+    font-size: xx-large;
+}
 
-  }
-  
-  
-  .wrapper {
-    margin: auto;
+.welcome p {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.bestheader {
+    height: 100px;
     display: flex;
-  }
-  
-  
-  #gallery {
+    background-color: #e0efff;
+    padding-bottom: 20px;
+}
+
+#besttitle {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: xxx-large;
+    margin-left: 70px;
+    color: #23395d;
+    opacity: 0.5;
+}
+
+
+.grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
-    margin:auto;
-    width: 80%;
-  }
-  
-  #gallery img {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: auto;
+    max-width: 80%;
+    padding-top: 100px;
+}
+
+.grid img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  
-  footer {
-    padding: 30px;
+
+.grid div {
+    display: flex;
+}
+
+#pic-one {
+    background-image: url(/img/micheile-dot-com-hand\ painted.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
     display: flex;
     justify-content: center;
-  }
-  
-  footer a {
-    color: lightgray;
-    font-family: helvetica;
-    font-size: large;
+}
+
+#pic-two {
+    background-image: url(/img/micheile-dot-com-hand\ painted2.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#pic-three {
+    background-image: url(/img/jean-marc-vieregge-classic\ dishes.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#pic-four {
+    background-image: url(/img/dee-copper-and-wild-fun\ bowls.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.details {
+    background-color:white;
+    width: 90%;
+    height: 15%;
+    border-radius: 10px;
+    margin-top: 550px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    opacity: 0.9
+}
+
+.details h3 {
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.details a {
+    width: 150px;
+    height:30px;
+    background-color: #23395d;
+    border-radius: 25px;
+    text-align: center;
     text-decoration: none;
-    margin: 20px;
-    
-  }
-  
-  
-  
-  
-  @media screen and (max-width: 64em){ /* small laptop < 1024px */
-    #gallery {
-      grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 0 10px 0;
+    filter: drop-shadow(1px 1px 10px rgb(128, 128, 128));
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #F4F4F4;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.footerlinks {
+    display: flex;
+    margin: 0 30px 0 30px;
+}
+
+.footerlinks a {
+    text-decoration: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: #23395d;
+
+
+}
+
+
+/* @media screen and (max-width: 1750px){
+    .grid {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+
+
+} */
+
+@media screen and (max-width: 64em){ /* small laptop < 1024px */
+    .grid {
+      grid-template-columns: 1fr;
+      margin: auto;
     }
     
+    .grid img {
+        object-fit: cover;
+    }
+
+    .welcome {
+        margin-left: 600px;
+    }
   }
+
   @media screen and (max-width: 52em){ /* tablet < 768px - Celena adjusted slightly */
     nav {
-      height: 50px;
-      margin: 15px 0px 40px 0px;
+      height: 100px;
+      /* margin: 15px 0px 40px 0px; */
       overflow: hidden;
     }
     
     .menu-icon {
       display: block;
       margin-bottom: 10px;
+      align-items: right;
     }
     
     nav li {
       flex-basis: 100%;
       margin: 3px 0 3px 0;
+    }
+
+    .navlinks {
+        flex-wrap: wrap;
     }
     
     .nav-expanded {
@@ -145,23 +255,11 @@ nav a:hover {
     }
 
     .hero {
-      min-height: 300px;
+      max-height: 200px;
     }
 
-    .hero h1 {
-      font-size: xx-large;
-    }
-
-    .hero h2 {
-      font-size: medium;
-    }
-
-    #descrip {
-      font-size: medium;
-    }
-
-    #gallery {
-      grid-template-columns: 1fr 1fr;
+    .grid {
+      grid-template-columns: 1fr;
     }
 
     footer a {
