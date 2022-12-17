@@ -1,9 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Raleway&display=swap');
 
 
 html {
+
     background-color: #ffffff;
     margin: 0;
 }
@@ -22,13 +23,13 @@ nav ul {
 }
 
 .navlinks {
-    margin-left: 60px;
+    margin-left: 30px;
     text-decoration: none;
     background-color: #23395d;
     padding: 15px;
-    border-radius: 25px;
+    border-radius: 15px;
     color: white;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: medium;
     font-size: medium;
 
@@ -50,30 +51,33 @@ nav li a:hover {
     height: 500px;
     background-size: cover;
     display: flex;
+    justify-content: flex-end;
 }
 
 .welcome {
     background-color: #e0efff;
-    width: 300px;
-    height: 350px;
+    width: 20rem;
+    height: 22rem;
     margin-top: 200px;
-    margin-left: 900px;
     padding: 30px;
     border-radius: 20px;
     text-align: center;
-    filter: drop-shadow(10px 10px 35px);
-    
+    filter: drop-shadow(10px 10px 30px);
+    margin-right: 50px;
 }
 
 #welcometitle {
     font-family: 'Cedarville Cursive', cursive;
     font-weight: bold;
     font-size: xx-large;
+    margin-top: -5px;
 }
 
 .welcome p {
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: left;
+    font-size: 14pt;
+    margin-bottom: 20px;
 }
 
 .bestheader {
@@ -81,6 +85,7 @@ nav li a:hover {
     display: flex;
     background-color: #e0efff;
     padding-bottom: 20px;
+    align-items: center;
 }
 
 #besttitle {
@@ -89,7 +94,8 @@ nav li a:hover {
     font-size: xxx-large;
     margin-left: 70px;
     color: #23395d;
-    opacity: 0.5;
+    opacity: 0.8;
+    padding-top: 15px;
 }
 
 
@@ -102,54 +108,38 @@ nav li a:hover {
     padding-top: 100px;
 }
 
-.grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 
 .grid div {
     display: flex;
 }
 
-#pic-one {
-    background-image: url(/img/micheile-dot-com-hand\ painted.jpeg);
+.items {
     width: 100%;
     height: 100%;
     background-size: cover;
     display: flex;
     justify-content: center;
+    background-position: center;
+}
+
+#pic-one {
+    background-image: url(/img/micheile-dot-com-hand\ painted.jpeg);
 }
 
 #pic-two {
     background-image: url(/img/micheile-dot-com-hand\ painted2.jpeg);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
 }
 
 #pic-three {
     background-image: url(/img/jean-marc-vieregge-classic\ dishes.jpeg);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
 }
 
 #pic-four {
     background-image: url(/img/dee-copper-and-wild-fun\ bowls.jpeg);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
 }
 
 .details {
-    background-color:white;
+    background-color: rgba(255, 255, 255, 0.9);
     width: 90%;
     height: 15%;
     border-radius: 10px;
@@ -158,24 +148,26 @@ nav li a:hover {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
-    opacity: 0.9
+    padding: 20px;
 }
 
 .details h3 {
     margin: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 .details a {
     width: 150px;
     height:30px;
     background-color: #23395d;
-    border-radius: 25px;
+    border-radius: 15px;
     text-align: center;
     text-decoration: none;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Raleway', sans-serif;
     padding: 10px 0 10px 0;
+}
+
+.details a:hover {
     filter: drop-shadow(1px 1px 10px rgb(128, 128, 128));
 }
 
@@ -186,11 +178,11 @@ footer {
     width: 100%;
     height: 200px;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .footerlinks {
-    display: flex;
+    display: inline-block;
     margin: 0 30px 0 30px;
 }
 
@@ -199,21 +191,188 @@ footer {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: medium;
     color: #23395d;
+}
 
-
+.copyright {
+    display: block;
 }
 
 
-/* @media screen and (max-width: 1750px){
+/*----------------------- PRODUCT PAGE --------------------------*/
+
+.item-chosen {
+    display: flex;
+    background-color:#e0efff;
+    padding: 50px;
+}
+
+.item-img {
+    max-width: 50rem;
+    max-height:50rem;
+    object-fit: cover;
+    margin-right: 3rem;
+}
+
+.more-info {
+    background-color: white;
+    margin: auto;
+    padding: 3rem;
+    
+}
+
+.item-title {
+    font-size: xx-large;
+    font-family: 'Raleway', sans-serif;
+    color: #23395d;
+}
+
+.price {
+    margin-bottom: 2rem;
+}
+
+.artist-acknow {
+    color: #23395d;
+    font-weight: bold;
+}
+
+.item-desc {
+    font-size: 1rem;
+}
+
+.buy-now {
+    width: 150px;
+    height:30px;
+    background-color: #23395d;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 15px 10px 15px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: auto;
+    max-width: 80%;
+    padding-top: 50px;
+}
+
+.gallery-title {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    color: #23395d;
+    padding-top:50px;
+
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*----------------------- ABOUT US PAGE ------------------*/
+
+
+.about-us {
+    background-color: #e0efff;
+}
+
+.team-pic {
+    display: flex;
+    justify-content: center;
+}
+
+.team-pic img {
+    width: 60rem;
+    height:40rem;
+    filter: drop-shadow(10px 10px 15px);
+}
+
+.about-text {
+    background-color: white;
+    padding: 1rem 4rem 2rem 4rem;
+    margin: 2rem 5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+#call-to-act {
+    margin-bottom: 2rem;
+}
+
+#hey {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: xx-large;
+}
+
+.contact-button a {
+    background-color: #23395d;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+/*---------------------------------------------*/
+
+@media screen and (max-width: 1750px){
     .grid {
         grid-template-columns: 1fr;
         margin: auto;
     }
+}
 
 
-} */
+@media screen and (max-width: 1282px){
+    #besttitle {
+        font-size: 30pt;
+        padding-top: 15px;
+    }
+}
 
-@media screen and (max-width: 64em){ /* small laptop < 1024px */
+
+@media screen and (max-width: 1150px){
+    .welcome {
+        height: auto;
+        width: 40rem;
+        margin: 0 25px;
+    }
+
+    .hero {
+        height: 420px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #besttitle {
+        font-size: 25pt;
+        margin-left: 50px;
+    }
+    
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .team-pic img {
+        width: 50rem;
+        height: 34rem;
+    }
+}
+
+
+@media screen and (max-width: 66em){ /* small laptop < 1024px */
     .grid {
       grid-template-columns: 1fr;
       margin: auto;
@@ -223,23 +382,100 @@ footer {
         object-fit: cover;
     }
 
-    .welcome {
-        margin-left: 600px;
+
+    #welcometitle {
+        font-size: 25pt;
+        margin-bottom: 10px;
+    }
+
+    .welcome p {
+        font-size: 13pt;
     }
   }
 
+  
+  @media screen and (max-width: 965px){
+    .bestheader {
+        justify-content: center;
+    }
+
+    #besttitle {
+        margin-left: 0;
+    }
+
+    .grid {
+        max-width: 70%;
+    }
+
+    .item-chosen {
+        padding: 20px;
+    }
+
+    .item-img {
+        max-width: 15rem;
+        margin-right: 1rem;
+    }
+
+    .item-desc {
+        font-size: 12pt;
+    }
+
+    .team-pic img {
+        width: 40rem;
+        height: 28rem;
+    }
+
+  }
+
+
+
+  @media screen and (max-width: 834px){
+    .bestheader {
+        margin-top: 1rem;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        margin-bottom: 10px;
+        align-items: right;
+      }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    .item-chosen {
+        padding: 20px;
+    }
+
+    .item-img {
+        max-width: 20rem;
+    }
+
+    .gallery {
+        justify-content: center;
+    }
+
+    .gallery img {
+        max-width: 80%;
+        margin: auto;
+    }
+ 
+
+}
+
+
   @media screen and (max-width: 52em){ /* tablet < 768px - Celena adjusted slightly */
     nav {
-      height: 100px;
-      /* margin: 15px 0px 40px 0px; */
+      height: 126px;
       overflow: hidden;
     }
     
     .menu-icon {
-      display: block;
+    
       margin-bottom: 10px;
       align-items: right;
-    }
+  }
     
     nav li {
       flex-basis: 100%;
@@ -247,15 +483,11 @@ footer {
     }
 
     .navlinks {
-        flex-wrap: wrap;
+    display: inline-block;
     }
     
     .nav-expanded {
-      height: auto;
-    }
-
-    .hero {
-      max-height: 200px;
+      height: 310px;
     }
 
     .grid {
@@ -266,16 +498,59 @@ footer {
       font-size: x-small;
       text-align: center;
     }
+
+    .item-chosen {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     
+    .item-img {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .item-title {
+        font-size: x-large;
+    }
+
+    .price {
+        font-size: 13pt;
+    }
+    
+    .about-us {
+        padding: 10px;
+    }
+    
+    .team-pic img {
+        width: 30rem;
+        height: 20rem;
+    }
+    
+    .about-text {
+        font-size: 12pt;
+        margin: 2rem 2rem;
+        padding: 2rem;
+    }
+
   }
   @media screen and (max-width: 30em){ /* mobile < 480px */
 
-    #gallery {
-      grid-template-columns: 1fr;
+    .gallery-title {
+        font-size: medium;
     }
 
-    #descrip {
-      font-size: small;
+    #besttitle {
+        font-size: 18pt;
+    }
+
+    .about-us {
+        padding: 5px;
+    }
+
+    .team-pic img {
+        width: 19rem;
+        height:13rem;
     }
 
   }
+
